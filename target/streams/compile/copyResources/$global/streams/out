@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/evolutions,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/postgres.conf,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/postgres.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/logback.xml,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/routes,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/application.conf,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/evolutions/default,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/conf/evolutions/default/1.sql,/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/target/scala-2.11/classes/evolutions/default/1.sql)[0m

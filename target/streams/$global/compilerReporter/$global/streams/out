@@ -1,0 +1,13 @@
+[0m[[33mwarn[0m] [0m/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/app/views/indexEdan.scala.html:28: Adaptation of argument list by inserting () has been deprecated: leaky (Object-receiving) target makes this especially dangerous.[0m
+[0m[[33mwarn[0m] [0m        signature: editarEdanForm.apply(param: Any): play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[33mwarn[0m] [0m  given arguments: <none>[0m
+[0m[[33mwarn[0m] [0m after adaptation: editarEdanForm((): Unit)[0m
+[0m[[33mwarn[0m] [0m    @views.html.edan.editarEdanForm()[0m
+[0m[[33mwarn[0m] [0m                                   ^[0m
+[0m[[33mwarn[0m] [0m/home/desconocido/Documentos/Grupo21_Proyecto10/Proyecto10GRUPO21/app/views/indexUsuario.scala.html:29: Adaptation of argument list by inserting () has been deprecated: leaky (Object-receiving) target makes this especially dangerous.[0m
+[0m[[33mwarn[0m] [0m        signature: editarUsuarioForm.apply(param: Any): play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[33mwarn[0m] [0m  given arguments: <none>[0m
+[0m[[33mwarn[0m] [0m after adaptation: editarUsuarioForm((): Unit)[0m
+[0m[[33mwarn[0m] [0m    @views.html.usuario.editarUsuarioForm()[0m
+[0m[[33mwarn[0m] [0m                                         ^[0m
+[0m[[33mwarn[0m] [0mtwo warnings found[0m

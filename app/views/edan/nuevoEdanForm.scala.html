@@ -1,0 +1,194 @@
+<form id="nuevoEdanForm" role="form" ng-submit="addEdan()">
+    <div class="modal fade" id="nuevoEdanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Crear Ficha Edan</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="stepwizard col-md-offset-3">
+                     <div class="stepwizard-row setup-panel">
+                        <div class="stepwizard-step">
+                            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                                <p>Paso 1</p>
+                            </div>
+                          <div class="stepwizard-step">
+                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                <p>Paso 2</p>
+                            </div>
+                          <div class="stepwizard-step">
+                                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                <p>Paso 3</p>
+                          </div>
+                             <div class="stepwizard-step">
+                                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                <p>Paso 4</p>
+                          </div>
+                        </div>
+                    </div>
+  
+                    <div class="row setup-content" id="step-1">
+                        <div class="col-xs-9 col-md-offset-2">
+                          <div class="col-md-12">
+                             <h3>Datos Generales</h3>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanEntrevistador" name="entrevistador" ng-model="newEdan.entrevistador" placeholder="Entrevistador">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanCargo" name="cargo" ng-model="newEdan.cargo" placeholder="Cargo">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanInstitucion" name="institucion" ng-model="newEdan.institucion" placeholder="Institucion">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanTelefono" name="telefono" ng-model="newEdan.telefono" placeholder="Telefono">
+                                </div>
+                    
+                                <div class="form-group">
+                                     <input type="email" class="form-control" id="edanEmail" name="email" ng-model="newEdan.email" placeholder="Correo Electronico">
+                                </div>
+            
+                                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row setup-content" id="step-2">
+                        <div class="col-xs-9 col-md-offset-2">
+                            <div class="col-md-12">
+                              <h3>Ubicacion</h3>
+                                <div class="form-group">
+                                     <input type="text" class="form-control" id="edanDireccion" name="direccion" ng-model="newEdan.direccion"  placeholder="Direccion">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanDepartamento" name="departamento" ng-model="newEdan.departamento" placeholder="Departamento">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanMunicipio" name="municipio" ng-model="newEdan.municipio" placeholder="Municipio" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanZonaEvaluada" name="zonaevaluada"  ng-model="newEdan.zonaevaluada"  placeholder="Zona Evaluada">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanPuntoReferencia" name="puntoreferencia" ng-model="newEdan.puntoreferencia"  placeholder="Punto de Referencia">
+                                </div>
+                                 
+                               <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguente</button>
+                       </div>
+                     </div>
+                    </div>
+                    
+                     <div class="row setup-content" id="step-3">
+                        <div class="col-xs-9 col-md-offset-2">
+                            <div class="col-md-12">
+                                <h3>Tipo de Evento</h3>
+                                  <select class="form-control" ng-model="newEdan.evento" >
+                                          <option selected="selected">Terremoto</option>
+                                          <option>Huracan</option>
+                                          <option>Erupcion Volcanica</option>
+                                          <option>Tsunami</option>
+                                          <option>Incendio Forestal</option>
+                                    </select>
+                                <h3>Vias de Acceso</h3>
+                                 <div class="row">
+			    				   <div class="col-xs-4 col-sm-4 col-md-4">
+			    					<div class="form-group">
+			    					 Terrestre:
+			                         <select class="form-control" ng-model="newEdan.vterrestre" >
+                                          <option selected="selected">Sin Daños</option>
+                                          <option>Dañada</option>
+                                          <option>Transitable</option>
+                                          <option>Paso Regulado</option>
+                                          <option>Instransitable</option>
+                                     </select>
+			    					</div>
+			    			       </div>
+			    			       <div class="col-xs-4 col-sm-4 col-md-4">
+			    					<div class="form-group">
+			    					 Aerea:
+			                         <select class="form-control" ng-model="newEdan.vaerea">
+                                          <option selected="selected">Sin Daños</option>
+                                          <option>Afectado</option>
+                                          <option>Destruido</option>
+                                          <option>Funciona</option>
+                                          <option>No Funciona</option>
+                                     </select>
+			    					</div>
+			    			       </div>
+			    			       <div class="col-xs-4 col-sm-4 col-md-4">
+			    					<div class="form-group">
+			    					 Maritima:
+			                         <select class="form-control" ng-model="newEdan.vmaritima" >
+                                         <option selected="selected">Sin Daños</option>
+                                          <option>Afectado</option>
+                                          <option>Destruido</option>
+                                          <option>Funciona</option>
+                                          <option>No Funciona</option>
+                                     </select>
+			    					</div>
+			    				 </div>
+			    				</div>
+                              Ruta Alterna
+                       	      <div class="form-group">
+                                    <input type="text" class="form-control" id="edanRutaAlterna" name="rutaalterna" ng-model="newEdan.rutaalterna" placeholder="Describa y ubique rutas alternas">
+                                </div>
+                                Obstaculos
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="edanObstaculos" name="obstaculos" ng-model="newEdan.obstaculos" placeholder="Describa y ubique obstaculos a eliminar">
+                                </div>
+                               <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Siguiente</button>
+                           </div>
+                         </div>
+                       </div>
+                       
+                    <div class="row setup-content" id="step-4">
+                        <div class="col-xs-9 col-md-offset-2">
+                            <div class="col-md-12">
+                                <h3>Daños en la Poblacion</h3>
+                                   <div class="row">
+			    				   <div class="col-xs-6 col-sm-6 col-md-6">
+                                   <div class="form-group">
+                                    Numero de Heridos Ambulatorios: <input type="text" class="form-control" id="edanHeridos1" ng-model="newEdan.heridos1" name="heridos1">
+                                   </div>
+                                   </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                  <div class="form-group">
+                                    Numero de Heridos Remitidos Para Ingreso: <input type="text" class="form-control" id="edanHeridos2" ng-model="newEdan.heridos2" name="heridos2">
+                                </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                  <div class="form-group">
+                                    Numero de Albergados: <input type="text" class="form-control" id="edanAlbergados" ng-model="newEdan.albergados"  name="albergados" >
+                                </div>
+                                </div>
+			    				 <div class="col-xs-6 col-sm-6 col-md-6">
+                                  <div class="form-group">
+                                    Numero de Evacuados: <input type="text" class="form-control" id="edanEvacuados" ng-model="newEdan.evacuados" name="evacuados" >
+                                </div>
+                                </div>
+                                </div>
+                                  <div class="form-group">
+                                    Numero de Fallecidos: <input type="text" class="form-control" id="edanFallecidos" ng-model="newEdan.fallecidos" name="fallecidos" >
+                                </div>
+            
+                                  <div class="modal-footer">
+                                 <button type="button" class="btn btn-default" data-dismiss="modal" >Cancelar</button>
+                                 <input type="submit" ng-disabled="nuevoEdanForm.$invalid" class="btn btn-warning" id="submit" value="Agregar" />
+                              </div>
+                           </div>
+                         </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</form>

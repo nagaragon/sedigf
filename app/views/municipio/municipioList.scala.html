@@ -1,0 +1,16 @@
+<table class="table table-hover">
+    <thead>
+    <th>Departamento</th>
+    <th>Municipio</th>
+    <th></th>
+    <th></th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="muni in muns | filter: searchMunicipio">
+        <td>{{muni.departamentoid}}</td>
+        <td>{{muni.nombre}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<p style="color: rgb(110, 114, 114)">Mostrando <strong style="color: rgb(42, 41, 41);">{{ (muns | filter:searchMunicipio).length }}</strong> de <strong style="color: rgb(16, 106, 135);">{{muns.length}}</strong> Registros</p>

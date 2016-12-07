@@ -1,0 +1,76 @@
+New log file opened at Tue Dec 06 21:25:29 CST 2016 by 2209@desconocido
+Taking next connection to: 42268
+New client attempting to connect on port: 60220-42268
+  Address = /127.0.1.1:42268
+This client on port 60220 has uuid 81a973a4-db51-4622-8e92-645132bb0988 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-81a973a4-db51-4622-8e92-645132bb0988
+Taking next connection to: 42268
+New client attempting to connect on port: 60221-42268
+  Address = /127.0.1.1:42268
+Handshake exception on socket: 60221
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 42268
+New client attempting to connect on port: 60222-42268
+  Address = /127.0.1.1:42268
+This client on port 60222 has uuid 5c2de895-beba-422b-b0e7-4fc3f77c0d43 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-81a973a4-db51-4622-8e92-645132bb0988, activator-5c2de895-beba-422b-b0e7-4fc3f77c0d43
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+New client attempting to connect on port: 60252-42268
+  Address = /127.0.1.1:42268
+Handshake exception on socket: 60252
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 42268
+New client attempting to connect on port: 60253-42268
+  Address = /127.0.1.1:42268
+This client on port 60253 has uuid 3eafe024-ceb7-41a8-ab38-5f67c8ed8b1e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-5c2de895-beba-422b-b0e7-4fc3f77c0d43, play-fork-run-3eafe024-ceb7-41a8-ab38-5f67c8ed8b1e
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42268
